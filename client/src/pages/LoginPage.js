@@ -20,7 +20,6 @@ export default function LoginPage() {
              setUserInfo(userInfo);
             setRedirect(true);
           });
-        setRedirect(true);
         } else {
           alert('wrong credentials');
         }

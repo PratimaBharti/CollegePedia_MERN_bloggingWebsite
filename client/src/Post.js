@@ -1,18 +1,25 @@
-export default function Post()
-{
+import {formatISO9075} from "date-fns";
+import {Link} from "react-router-dom";
+
+export default function Post({_id,title,summary,cover,content,createdAt,author}) {
+
   return (
     <div className="post">
-    <div className="image">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ24WfXpNMC2EjWMrWb0hV5-wPgfZVCBUsHQYqgk5V&s" alt="" />
-    </div>
-    <div className="texts">
-    <h2>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an</h2>
-     <p className="info">
-     <a href="" className="author">Pratima</a>
-     <time> 2023-01-2</time>
-     </p>
-    <p  className='summary'>t is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of </p>
-    </div>
+      <div className="image">
+        <Link to={`/post/${_id}`}>
+          <img src={'http://localhost:4000/'+cover} alt=""/>
+        </Link>
+      </div>
+      <div className="texts">
+        <Link to={`/post/${_id}`}>
+        <h2>{title}</h2>
+        </Link>
+        <p className="info">
+          <a className="author">{author.username}</a>
+          <time>{formatISO9075(new Date(createdAt))}</time>
+        </p>
+        <p className="summary">{summary}</p>
+      </div>
     </div>
   );
 }
