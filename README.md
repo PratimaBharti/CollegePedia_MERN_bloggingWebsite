@@ -2,7 +2,7 @@
 
 This website is build to assist people who need review of the esteemed college of India, like IIT,IIIT,NIT..ets for taking admission in Mtech through GATE.
 
-<img width="614" alt="Screenshot 2023-07-12 004033" src="https://github.com/PratimaBharti/blogging_app/assets/54327856/2611daa4-bf93-40ad-847c-982a042aa2b6">
+https://github.com/PratimaBharti/CollegePedia_MERN_bloggingWebsite/assets/54327856/0289b6bd-c725-4b47-a1aa-9de1a33c9ea6
 
 # Technologies Used
 
